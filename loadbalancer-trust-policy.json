@@ -4,13 +4,13 @@
       {
          "Effect":"Allow",
          "Principal":{
-            "Federated":"arn:aws:iam::<accountId>:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/<oidcId>"
+            "Federated":"arn:aws:iam::767397657023:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/48FC0AB38CE22ECC5BB8682AA974992B"
          },
          "Action":"sts:AssumeRoleWithWebIdentity",
          "Condition":{
             "StringEquals":{
-               "oidc.eks.us-east-1.amazonaws.com/id/<oidcId>:aud":"sts.amazonaws.com",
-               "oidc.eks.us-east-1.amazonaws.com/id/<oidcId>:sub":"system:serviceaccount:kube-system:aws-load-balancer-controller"
+               "oidc.eks.us-east-1.amazonaws.com/id/48FC0AB38CE22ECC5BB8682AA974992B:aud":"sts.amazonaws.com",
+               "oidc.eks.us-east-1.amazonaws.com/id/48FC0AB38CE22ECC5BB8682AA974992B:sub":"system:serviceaccount:kube-system:aws-load-balancer-controller"
             }
          }
       }
